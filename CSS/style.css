@@ -1,53 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: rgb(7, 10, 54) ;
-    color: white;
+    background-color:white;
+    color: black;
+    position: relative;
 }
 
-.content {
-    max-width: 60%;    
+header#cabecalho {
+    background-color: rgb(134, 180, 227);
+    margin: auto;
+    max-width: 60%;
+    border-left: 1px solid rgb(134, 180, 227);
+    border-right:1px solid rgb(134, 180, 227);
+}
+
+header#cabecalho nav li  {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    transition: 500ms;
+    padding: 20px;
+    text-transform: uppercase;    
+}
+header#cabecalho nav li:hover {
+    background-color: rgb(41, 65, 88);
+    
+}
+
+header#cabecalho nav li:hover a {
+    color: beige;
+}
+
+
+nav#main-nav-menu {
+    display: inline-block;
+}
+
+header#cabecalho a {
+    text-decoration: none;
+    color:black;
+    transition: 500ms;
+}
+
+
+div.content {
+    max-width: 60%; 
+    height: 100vh;   
     font-family: monospace, sans-serif;
     margin: auto;
-    text-align: center;   
+    border-left: 1px solid rgb(134, 180, 227);
+    border-right:1px solid rgb(134, 180, 227);
+    
 }
 
-h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 5em;
-}
 
-.header-text {
-    color:rgb(0, 135, 165);
+div.header-text {
+    color:rgb(139, 63, 44);
+    display: inline-block;
 }
-
-.profile-pic {
-    border-radius: 100%;
-    border: 4px solid rgb(80, 121, 131);
-    margin:5px 25px;
-    width: 13%; 
-    float:left;
-}
-
-.about-me-text  {    
-    text-align: left;
-    padding-top: 20px;
-    width: auto;
-}
-
-.navegação {
-    font-family: monospace;
-}
-
-.about-me-content {
+div.about-me-content {
     margin-bottom: 60px;
     vertical-align: top;
+    display: inline-block; 
+    background-color: rgb(164, 207, 250); 
+    width: 100%;  
+}
+div#pic-section {
+    display: inline-block;
+    margin: 10px;
+    ;
+    
+}
+
+img.profile-pic {
+    border-radius: 5px;
+    border: 4px solid rgb(80, 121, 131);
+    margin:5px 25px;
+    width: 150px;
+    
+}
+
+div.about-me-text {
+    vertical-align: top;
+    text-align: left;
+    padding-top: 20px;
+    max-width: 60%;
     display: inline-block;
 }
 
 li {
-    list-style-type: none;
+    list-style: none;
 }
 
-.skills {
-    text-align: left;  
-}
 
+
+#footer-div {
+    background-color: rgb(134, 180, 227);
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    max-width:60%;
+}
